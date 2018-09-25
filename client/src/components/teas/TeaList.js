@@ -5,7 +5,7 @@ import Tea from "./Tea.js";
 const TeaList = ({ teas }) => {
   const teaComponent = teas.map((tea, i) => {
     return (
-      <span className=" px-3 py-3 mb-3">
+      <span className="px-3 py-3 mb-3">
         <Tea
           picture={teas[i].picture}
           name={teas[i].name}
@@ -15,7 +15,7 @@ const TeaList = ({ teas }) => {
       </span>
     );
   }); // forEach/map ends here.. always return when using map
-  return <div>{teaComponent}</div>;
+  return <div className="d-flex flex-wrap">{teaComponent}</div>;
 };
 
 export default TeaList;
